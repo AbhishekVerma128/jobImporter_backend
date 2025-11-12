@@ -8,7 +8,7 @@ connectRedis()
 const routes = require("./routes/jobs.routes")
 const port = process.env.PORT || 3001;
 const app = exprss();
-app.use("/", routes)
+app.use("/api/", routes)
 
 app.listen(port,'0.0.0.0', () => {
     console.log(`Server is running on port ${port}`);
